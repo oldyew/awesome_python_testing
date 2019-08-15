@@ -4,11 +4,13 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pylint = "*"
 
 [packages]
 requests = "*"
 selenium = "*"
 pytest = "*"
+webdriver_manager = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "*"

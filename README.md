@@ -1,26 +1,5 @@
 # Awesome Python Testing
 
-## Setup
-
-To set up the Python environment and install dependencies, run:
-
-    > pip install pipenv
-    > pipenv install
-
-## Running Tests
-
-You will need a CrossBrowserTesting license to run the tests in this project.
-You can obtain a trial license from https://crossbrowsertesting.com/.
-Add your username and authentication key to `cbt_config.json`.
-
-To run tests, run the following command from the project's root directory:
-
-    > pipenv run python -m pytest
-
-## Additional Resources
-
-* [CrossBrowserTesting](https://crossbrowsertesting.com/) website
-
 ## Project Setup
 
 ### System Prerequisites
@@ -46,15 +25,6 @@ To create your own branch named `tutorial/develop`, run:
     > git checkout master
     > git branch tutorial/develop
     > git checkout tutorial/develop
-
-The `example/*` branches contain the completed code for tutorial parts.
-If you get stuck, you can always check the example code.
-
-* `example/1-first-test`
-* `example/2-page-objects`
-* `example/3-webdriver-setup`
-* `example/4-webdriver-calls`
-* `example/develop` (main development branch for the examples)
 
 ## Tutorial Instructions
 
@@ -554,14 +524,17 @@ def test_basic_duckduckgo_search(browser):
   assert result_page.result_count_for_phrase(PHRASE) > 0
 ```
 
-Rerun the test using `pipenv run python -m pytest`.
-Now, finally, it should run to completion and pass!
-The test will take a few second to run because it must wait for page loads.
-Chrome should pop up and automatically go though all test steps.
-Try not to interfere with the browser as the test runs.
-Make sure pytest doesn't report any failures when it completes.
+Run the test using `pipenv run python -m pytest`.
 
-Congrats! You have completed the guided part of this tutorial!
+## Running Tests
+
+You will need a CrossBrowserTesting license to run the tests in this project.
+You can obtain a trial license from https://crossbrowsertesting.com/.
+Add your username and authentication key to `cbt_config.json`.
+
+Tond from the project's root directory:
+
+    > pipenv run python -m pytest
 
 ## Independent Exercises
 
@@ -595,3 +568,4 @@ If you get stuck, ask for help.
   * [Locating Elements](https://selenium-python.readthedocs.io/locating-elements.html)
 * [pytest.org](https://docs.pytest.org/)
 * [Selenium Grid wiki](https://github.com/SeleniumHQ/selenium/wiki/Grid2)
+* [CrossBrowserTesting](https://crossbrowsertesting.com/) website
